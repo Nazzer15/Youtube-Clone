@@ -1,5 +1,11 @@
+import React from 'react'
 import './App.css';
+
 import Header from './Header';
+import Sidebar from './Sidebar'
+import RecommendedVideos from './RecommendedVideos'
+
+
 import MenuIcon from '@material-ui/icons/Menu'
 
 function App() {
@@ -7,10 +13,11 @@ function App() {
     <div className="App">
 
       <Header />
-      
-      {/*Header*/}
-      {/*Sidebar*/}
-      {/*Content*/}
+      <div className="app_page">
+        <Sidebar />
+        <RecommendedVideos />
+      </div>
+
     </div>
   );
 }
